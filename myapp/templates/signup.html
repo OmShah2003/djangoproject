@@ -1,0 +1,18 @@
+<!-- myapp/templates/signup.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup</title>
+</head>
+<body>
+    <h2>Signup</h2>
+    <form method="post" enctype="multipart/form-data">
+        <h2>Signup</h2>
+<a href="{% url 'patient_signup' %}">Patient Signup</a><br>
+<a href="{% url 'doctor_signup' %}">Doctor Signup</a>
+
+    </form>
+    <p>CSRF Token: {{ csrf_token }}</p>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<html>
+<head>
+    <title>Signup</title>
+</head>
+<body>
+    <h2>{{ user_type }} Signup</h2>
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Signup</button>
+</form>
+
+    <p>CSRF Token: {{ csrf_token }}</p>
+</body>
+</html>
