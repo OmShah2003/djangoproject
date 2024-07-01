@@ -35,7 +35,7 @@ def user_profile(request):
     return render(request, 'user_profile.html', context)
 '''
 
-'''from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect
 from django.contrib.auth import login
 from django.contrib.auth.decorators import login_required
 from .forms import PatientSignUpForm, DoctorSignUpForm
@@ -73,8 +73,8 @@ def patient_dashboard(request):
 @login_required
 def doctor_dashboard(request):
     return render(request, 'doctor_dashboard.html')
-'''
-# myapp/views.py
+
+'''# myapp/views.py
 from django.shortcuts import render, redirect
 from django.contrib.auth import login, authenticate
 from django.contrib.auth.forms import AuthenticationForm
@@ -122,3 +122,4 @@ def patient_dashboard(request):
 
 def doctor_dashboard(request):
     return render(request, 'doctor_dashboard.html')
+'''
